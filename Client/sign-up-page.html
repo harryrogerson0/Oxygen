@@ -1,0 +1,210 @@
+<!--
+Copyright © Harry Rogerson 2020
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oxygen - Sign up</title>
+        <link rel="icon" href="Images/Web-Page/oxygen-logo.png">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navigator">
+            <table id="menuButtonTable">
+                <tr>
+                    <td>
+                        <a href="/home" class="menuButton">
+                            Home
+                        </a>
+                    </td>
+                    <td>
+                        <a id="test" href="/play" class="menuButton">
+                            Play
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/help" class="menuButton">
+                            Help
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/contacts" class="menuButton">
+                            Contacts
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="main">
+            <div id="body">
+                <h1>
+                    Sign up
+                </h1>
+                <table id="form">
+                    <tr>
+                        <td>
+                            Username:
+                        </td>
+                        <td>
+                            <input id="inputUsername" type="text" maxlength="25" placeholder="Type here...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password:
+                        </td>
+                        <td>
+                            <input id="inputPassword1" type="password" maxlength="50" placeholder="Type here..."><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Repeat password:
+                        </td>
+                        <td>
+                            <input id="inputPassword2" type="password" maxlength="50" placeholder="Type here..."><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            I am <i>not</i> a bot:
+                        </td>
+                        <td>
+                            <input id="iAmNotABot" class="checkbox" type="checkbox"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            I <i>am</i> a bot:
+                        </td>
+                        <td>
+                            <input id="iAmABot" class="checkbox" type="checkbox"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button id="submit">Sign up</button>
+                        </td>
+                    </tr>
+                </table>
+                <p style="color: red;">Note: We use cookies on our site. Make sure you have them enabled in order to sign up.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p id="copyright">
+                Copyright © Harry Rogerson 2020
+            </p>
+        </div>
+        <style>
+            body {
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                image-rendering: pixelated;
+                image-rendering: crisp-edges;
+                background-image: url("Images/Web-Page/page-background.png");
+                background-size: 100vw 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            table {
+                table-layout: fixed;
+            }
+            td {
+                text-align: center;
+            }
+            h1, p, ul, #form {
+                font-family: monospace;
+                color: black;
+                margin: 2vw;
+            }
+            h1 {
+                font-size: 2.5vw;
+                text-align: center;
+            }
+            p, input, #form td {
+                text-align: left;
+                font-size: 1.5vw;
+            }
+            input, #submit {
+                width: 20vw;
+                height: 2vw;
+                font-family: monospace;
+                color: black;
+            }
+            .menuButton {
+                font-family: monospace;
+                color: white;
+                font-size: 3vw;
+            }
+            #menuButtonTable {
+                width: 100vw;
+                height: 7vw;
+                top: 0;
+            }
+            #navigator {
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 8vw;
+                position: fixed;
+                background-image: url("Images/Web-Page/navigator-background.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            #main {
+                width: 100vw;
+                margin-top: 9vw;
+                margin-bottom: 3vw;
+            }
+            #body {
+                width: 60vw;
+                top: 0;
+                margin-left: 20vw;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+                background-color: antiquewhite;
+                border-radius: 1vw;
+            }
+            .checkbox {
+                width: 2vw;
+            }
+            #submit {
+                font-size: 1.5vw;
+                text-align: center;
+                border-radius: 1vw;
+                background-color: rgb(29, 159, 0);
+                border: 0.1vw solid rgb(20, 109, 0);
+                color: white;
+                outline: none;
+            }
+            #submit:hover {
+                transform: translate(0px, 0.25vw);
+                cursor: pointer;
+            }
+            #submit:active {
+                transform: translate(0px, 0.5vw);
+                cursor: pointer;
+            }
+            #footer {
+                width: 100vw;
+                height: 2vw;
+                left: 0;
+                bottom: 0;
+                background-color: dimgray;
+                position: fixed;
+            }
+            #copyright {
+                color: white;
+                opacity: 0.5;
+                font-size: 1vw;
+                margin: 0.4vw;
+                text-align: center;
+            }
+        </style>
+        <script src="sign-up-page.js"></script>
+    </body>
+</html>

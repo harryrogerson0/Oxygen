@@ -1,0 +1,212 @@
+<!--
+Copyright © Harry Rogerson 2020
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oxygen - Home</title>
+        <link rel="icon" href="Images/Web-Page/oxygen-logo.png">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navigator">
+            <table id="menuButtonTable">
+                <tr>
+                    <td>
+                        <a href="/home" class="menuButton">
+                            Home
+                        </a>
+                    </td>
+                    <td>
+                        <a id="test" href="/play" class="menuButton">
+                            Play
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/help" class="menuButton">
+                            Help
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/contacts" class="menuButton">
+                            Contacts
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="main">
+            <div id="body">
+                <h1>
+                    Welcome to the Oxygen web page!
+                </h1>
+                <div id="slideshow"></div>
+                <p>
+                    <i>You find yourself on an island, in the middle of an ocean. Tool producing factories keep the oxygen level low, but can you increase it?</i>
+                </p>
+                <hr>
+                <table id="accountsTable">
+                    <tr>
+                        <td>
+                            <a href="/log-in" class="accountsButton">Log in</a>
+                        </td>
+                        <td>
+                            <a href="/sign-up" class="accountsButton">Sign up</a>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <p>Players with the highest oxygen level:</p>
+                <p id="top5Players1">----------</p>
+                <p id="top5Players2">----------</p>
+                <p id="top5Players3">----------</p>
+                <p id="top5Players4">----------</p>
+                <p id="top5Players5">----------</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p id="copyright">
+                Copyright © Harry Rogerson 2020
+            </p>
+        </div>
+        <style>
+            body {
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                image-rendering: pixelated;
+                image-rendering: crisp-edges;
+                background-image: url("Images/Web-Page/page-background.png");
+                background-size: 100vw 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            table {
+                table-layout: fixed;
+            }
+            td {
+                text-align: center;
+            }
+            h1, p, #accountsTable {
+                font-family: monospace;
+                color: black;
+                text-align: center;
+                margin: 2vw;
+            }
+            p, .accountsButton {
+                font-size: 1.5vw;
+            }
+            h1 {
+                font-size: 2.5vw;
+            }
+            hr {
+                border: none;
+                width: 54vw;
+                height: 1px;
+                background-color: gray;
+            }
+            .menuButton {
+                font-family: monospace;
+                color: white;
+                font-size: 3vw;
+            }
+            .accountsButton {
+                color: rgb(29, 159, 0);
+            }
+            .link {
+                color: rgb(29, 159, 0);
+            }
+            #menuButtonTable {
+                width: 100vw;
+                height: 7vw;
+                top: 0;
+            }
+            #accountsTable {
+                width: 56vw;
+            }
+            #navigator {
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 8vw;
+                position: fixed;
+                background-image: url("Images/Web-Page/navigator-background.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            #main {
+                width: 100vw;
+                margin-top: 9vw;
+                margin-bottom: 3vw;
+            }
+            #body {
+                width: 60vw;
+                top: 0;
+                margin-left: 20vw;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+                background-color: antiquewhite;
+                border-radius: 1vw;
+            }
+            #slideshow {
+                border: 0.1vw solid black;
+                border-radius: 1vw;
+                width: 50vw;
+                height: 25vw;
+                margin-left: 5vw;
+                background-image: url("Images/Web-Page/screenshot-1.png");
+                background-size: 100% 100%;
+                animation: slideshow 50s infinite;
+            }
+            #footer {
+                width: 100vw;
+                height: 2vw;
+                left: 0;
+                bottom: 0;
+                background-color: dimgray;
+                position: fixed;
+            }
+            #copyright {
+                color: white;
+                opacity: 0.5;
+                font-size: 1vw;
+                margin: 0.4vw;
+            }
+            @keyframes slideshow {
+                10% {
+                    background-image: url("Images/Web-Page/screenshot-1.png");
+                }
+                20% {
+                    background-image: url("Images/Web-Page/screenshot-2.png");
+                }
+                30% {
+                    background-image: url("Images/Web-Page/screenshot-2.png");
+                }
+                40% {
+                    background-image: url("Images/Web-Page/screenshot-3.png");
+                }
+                40% {
+                    background-image: url("Images/Web-Page/screenshot-3.png");
+                }
+                60% {
+                    background-image: url("Images/Web-Page/screenshot-4.png");
+                }
+                70% {
+                    background-image: url("Images/Web-Page/screenshot-4.png");
+                }
+                80% {
+                    background-image: url("Images/Web-Page/screenshot-5.png");
+                }
+                90% {
+                    background-image: url("Images/Web-Page/screenshot-5.png");
+                }
+                100% {
+                    background-image: url("Images/Web-Page/screenshot-1.png");
+                }
+            }
+        </style>
+        <script src="home-page.js"></script>
+    </body>
+</html>

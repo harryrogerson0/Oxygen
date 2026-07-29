@@ -1,0 +1,252 @@
+<!--
+Copyright © Harry Rogerson 2020
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oxygen - Help</title>
+        <link rel="icon" href="Images/Web-Page/oxygen-logo.png">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navigator">
+            <table id="menuButtonTable">
+                <tr>
+                    <td>
+                        <a href="/home" class="menuButton">
+                            Home
+                        </a>
+                    </td>
+                    <td>
+                        <a id="test" href="/play" class="menuButton">
+                            Play
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/help" class="menuButton">
+                            Help
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/contacts" class="menuButton">
+                            Contacts
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="main">
+            <div id="body">
+                <h1>
+                    Help Page
+                </h1>
+                <p>
+                    Aim:<br>
+                    Increase your oxygen level as high as you can. The rest is up to you...
+                </p>
+                <p>
+                    Main Controls:
+                </p>
+                <ul>
+                    <li>
+                        Move left - a
+                    </li>
+                    <li>
+                        Move right - d
+                    </li>
+                    <li>
+                        Jump - w
+                    </li>
+                    <li>
+                        Pause game - Escape
+                    </li>
+                    <li>
+                        Drop items - CLICK on item in inventory
+                    </li>
+                    <li>
+                        Pick up items - CLICK on item on ground
+                    </li>
+                    <li>
+                        Change inventory slots - press keys 1,2,3,4,5,6,7,8,9 or 0
+                    </li>
+                    <li>
+                        Use seletected inventory item or interact with structure - CLICK & hold on ground or structure
+                    </li>
+                </ul>
+                <p>
+                    Things to do:
+                </p>
+                <ul>
+                    <li>
+                        Take apples off trees
+                    </li>
+                    <li>
+                        Plant saplings with apples
+                    </li>
+                    <li>
+                        Grow saplings with water buckets
+                    </li>
+                    <li>
+                        Grow apples on trees with water buckets
+                    </li>
+                    <li>
+                        Chop down trees with axes
+                    </li>
+                    <li>
+                        Dig holes with spades
+                    </li>
+                    <li>
+                        Fill up buckets with water from holes
+                    </li>
+                    <li>
+                        Put water in holes with water buckets
+                    </li>
+                    <li>
+                        Fill in holes with mud
+                    </li>
+                    <li>
+                        Make mounds with mud
+                    </li>
+                    <li>
+                        Drink water buckets
+                    </li>
+                    <li>
+                        Eat apples
+                    </li>
+                    <li>
+                        Build wigwams, sheds, huts, houses and windmills with wood
+                    </li>
+                    <li>
+                        Knock down wigwams, sheds, huts, houses and windmills with sledgehammers
+                    </li>
+                    <li>
+                        Get sledgehammers, spades, axes and buckets from windmills & factories
+                    </li>
+                    <li>
+                        Knock down factories with sledgehammers
+                    </li>
+                    <li>
+                        Fix broken windmills with wood
+                    </li>
+                    <li>
+                        Drop items
+                    </li>
+                </ul>
+                <p>
+                    Other general information:
+                </p>
+                <ul>
+                    <li>
+                        Factories and windmills have a cooldown of 60 seconds after use.
+                    </li>
+                    <li>
+                        Player-created structures need a certain amount of space around them.
+                    </li>
+                    <li>
+                        You cannot chop down the last tree.
+                    </li>
+                    <li>
+                        You cannot knock down the last factory / windmill.
+                    </li>
+                </ul>
+                <p>
+                    If you have any further questions, suggestions or feedback then see our <a class="link" href="/contacts">Contacts page</a>.
+                </p>
+            </div>
+        </div>
+        <div id="footer">
+            <p id="copyright">
+                Copyright © Harry Rogerson 2020
+            </p>
+        </div>
+        <style>
+            body {
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                image-rendering: pixelated;
+                image-rendering: crisp-edges;
+                background-image: url("Images/Web-Page/page-background.png");
+                background-size: 100vw 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            table {
+                table-layout: fixed;
+            }
+            td {
+                text-align: center;
+            }
+            h1, p, ul {
+                font-family: monospace;
+                color: black;
+                margin: 2vw;
+            }
+            h1 {
+                font-size: 2.5vw;
+                text-align: center;
+            }
+            p, ul {
+                text-align: left;
+                font-size: 1.5vw;
+            }
+            ul {
+                margin-top: -2vw;
+            }
+            .menuButton {
+                font-family: monospace;
+                color: white;
+                font-size: 3vw;
+            }
+            .link {
+                color: rgb(29, 159, 0);
+            }
+            #menuButtonTable {
+                width: 100vw;
+                height: 7vw;
+                top: 0;
+            }
+            #navigator {
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 8vw;
+                position: fixed;
+                background-image: url("Images/Web-Page/navigator-background.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            #main {
+                width: 100vw;
+                margin-top: 9vw;
+                margin-bottom: 3vw;
+            }
+            #body {
+                width: 60vw;
+                top: 0;
+                margin-left: 20vw;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+                background-color: antiquewhite;
+                border-radius: 1vw;
+            }
+            #footer {
+                width: 100vw;
+                height: 2vw;
+                left: 0;
+                bottom: 0;
+                background-color: dimgray;
+                position: fixed;
+            }
+            #copyright {
+                color: white;
+                opacity: 0.5;
+                font-size: 1vw;
+                margin: 0.4vw;
+                text-align: center;
+            }
+        </style>
+    </body>
+</html>
